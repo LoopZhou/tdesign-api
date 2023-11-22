@@ -1,0 +1,29 @@
+:: BASE_DOC ::
+
+## API
+
+### DropdownItem Props
+
+name | type | default | description | required
+-- | -- | -- | -- | --
+disabled | Boolean | false | \- | N
+keys | Object | - | Typescript：`KeysType`。[see more ts definition](https://github.com/Tencent/tdesign-mobile-vue/blob/develop/src/common.ts) | N
+label | String | - | \- | N
+multiple | Boolean | false | \- | N
+options | Array | [] | Typescript：`Array<DropdownOption>` `interface DropdownOption { label: string; disabled: boolean; value: DropdownValue; }`。[see more ts definition](https://github.com/Tencent/tdesign-mobile-vue/tree/develop/src/dropdown-menu/type.ts) | N
+optionsColumns | String / Number | 1 | \- | N
+optionsLayout | String | columns | `deprecated` | N
+value | String / Number / Array | undefined | `v-model` and `v-model:value` is supported。Typescript：`DropdownValue ` `type DropdownValue = string \| number \| Array<DropdownValue>;`。[see more ts definition](https://github.com/Tencent/tdesign-mobile-vue/tree/develop/src/dropdown-menu/type.ts) | N
+defaultValue | String / Number / Array | undefined | uncontrolled property。Typescript：`DropdownValue ` `type DropdownValue = string \| number \| Array<DropdownValue>;`。[see more ts definition](https://github.com/Tencent/tdesign-mobile-vue/tree/develop/src/dropdown-menu/type.ts) | N
+visible | Boolean | false | \- | N
+onChange | Function |  | Typescript：`(value: DropdownValue) => void`<br/> | N
+onConfirm | Function |  | Typescript：`(value: DropdownValue) => void`<br/> | N
+onReset | Function |  | Typescript：`(value: DropdownValue) => void`<br/> | N
+
+### DropdownItem Events
+
+name | params | description
+-- | -- | --
+change | `(value: DropdownValue)` | \-
+confirm | `(value: DropdownValue)` | \-
+reset | `(value: DropdownValue)` | \-

@@ -39358,7 +39358,8 @@
       "field_name": "value",
       "field_type": [
         "1",
-        "2"
+        "2",
+        "16"
       ],
       "field_default_value": "undefined",
       "field_enum": "",
@@ -39369,7 +39370,7 @@
       "create_time": "2023-05-24 16:50:58",
       "update_time": "2023-05-24 16:50:58",
       "event_output": null,
-      "custom_field_type": "DropdownValue 【type DropdownValue = string | number;】",
+      "custom_field_type": "DropdownValue 【type DropdownValue = string | number | Array<DropdownValue>;】",
       "syntactic_sugar": "v-model",
       "readonly": 1,
       "html_attribute": 0,
@@ -39386,7 +39387,8 @@
       ],
       "field_type_text": [
         "String",
-        "Number"
+        "Number",
+        "Array"
       ]
     },
     {
